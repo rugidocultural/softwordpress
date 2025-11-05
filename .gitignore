@@ -2,6 +2,6 @@
 *
 
 # Publicar únicamente /static_page (Incluyendo subcarpetas) y el mismo archivo .gitignore
-!/static_page
+!/docs
 !/static_page/**
 !/.gitignore
