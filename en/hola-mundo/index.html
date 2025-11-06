@@ -48,8 +48,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel="stylesheet" id="custom-styles-css" href="https://redfronts.xyz/wp-content/themes/neo-blog/style.css?ver=1.1" type="text/css" media="all">
 <link rel="stylesheet" id="fontawesome-css" href="https://redfronts.xyz/wp-content/themes/neo-blog/fonts/fontawesome/css/all.min.css?ver=1" type="text/css" media="all">
 <link rel="stylesheet" id="trp-language-switcher-v2-css" href="https://redfronts.xyz/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher-v2.css?ver=3.0.3" type="text/css" media="all">
-<script type="text/javascript" src="https://redfronts.xyz/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://redfronts.xyz/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script type="text/javascript" src="https://redfronts.xyz/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-language-switcher.js?ver=3.0.3" id="trp-language-switcher-js-v2-js"></script>
 
 <!-- Google tag (gtag.js) snippet added by Site Kit -->
@@ -84,23 +82,23 @@ gtag("config", "GT-TB6D25GM");
 <style>
     :root {
         /* Colors */
-        --neo_blog_primary_color: #0a0200;
-        --neo_blog_primary_variant_darker: hsl(12, 80%, 0%);
-        --neo_blog_primary_variant_brighter: hsl(12, 100%, 22%);
-        --neo_blog_primary_variant_much_brighter: hsl(12, 100%, 27%);
+        --neo_blog_primary_color: #1C28C4;
+        --neo_blog_primary_variant_darker: hsl(236, 55%, 24%);
+        --neo_blog_primary_variant_brighter: hsl(236, 95%, 64%);
+        --neo_blog_primary_variant_much_brighter: hsl(236, 100%, 69%);
         --neo_blog_body: #F0F0F0;
-        --neo_blog_element_background: #ea839e;
+        --neo_blog_element_background: #f7f7f7;
         --neo_blog_font_color: #0a0a0a;
 
-        --neo_blog_element_background_inputfeld: hsl(12, 100%, 47%);
-        --neo_blog_element_background_variant: hsl(12, 100%, 47%);
-        --neo_blog_element_background_variant_darker: hsl(12, 100%, 37%);
+        --neo_blog_element_background_inputfeld: hsl(236, 100%, 89%);
+        --neo_blog_element_background_variant: hsl(236, 100%, 89%);
+        --neo_blog_element_background_variant_darker: hsl(236, 100%, 79%);
 
         /* Header Settings */
-        --neo_blog_header_font_color: #0a0a0a;
-        --neo_blog_title_size: 30px;;
+        --neo_blog_header_font_color: ;
+        --neo_blog_title_size: 25px;;
         --neo_blog_slogan-size: 14px;;
-        --neo_blog_header_menu_font_color: #0a0202;
+        --neo_blog_header_menu_font_color: ;
         --neo_blog_header_menu_background_color: ;
         --neo_blog_header_text-background_color: transparent;
         --neo_blog_header_gap: 0em;
@@ -120,11 +118,11 @@ gtag("config", "GT-TB6D25GM");
         --neo_blog_max_feed_width: 70em;
 
         /* Posts Settings */
-        --neo_blog_max_posts_width: 74em;
-        --neo_blog_background_color_posts: #0a0a0a;
-        --neo_blog_dark_mode_background_color_posts: #0f0f0f;
-        --neo_blog_heading_font_size: 30px;;
-        --neo_blog_posts_title_alignment: center;
+        --neo_blog_max_posts_width: 70em;
+        --neo_blog_background_color_posts: #0A0A0A00;
+        --neo_blog_dark_mode_background_color_posts: #0A0A0A00;
+        --neo_blog_heading_font_size: 24px;;
+        --neo_blog_posts_title_alignment: left;
 
         /* Pages Settings */
         --neo_blog_max_pages_width: 70em;
@@ -149,15 +147,15 @@ gtag("config", "GT-TB6D25GM");
 
 
     .neo_blog_dark_mode {
-        --neo_blog_primary_variant_darker: hsl(12, 100%, 27%);
-        --neo_blog_primary_variant_much_brighter: hsl(12, 80%, 0%);
+        --neo_blog_primary_variant_darker: hsl(236, 100%, 69%);
+        --neo_blog_primary_variant_much_brighter: hsl(236, 55%, 24%);
         --neo_blog_body: #0a0a0a;
-        --neo_blog_element_background: #12182d;
+        --neo_blog_element_background: #16181c;
         --neo_blog_font_color: #c8c8c8;
-        --neo_blog_header_font_color: #090c00;
-        --neo_blog_element_background_inputfeld: hsl(12, 100%, 47%);
-        --neo_blog_element_background_variant: hsl(12, 100%, 37%);
-        --neo_blog_element_background_variant_darker: hsl(12, 100%, 47%);
+        --neo_blog_header_font_color: #c8c8c8;
+        --neo_blog_element_background_inputfeld: hsl(236, 100%, 89%);
+        --neo_blog_element_background_variant: hsl(236, 100%, 79%);
+        --neo_blog_element_background_variant_darker: hsl(236, 100%, 89%);
     }
 
     body {
@@ -320,12 +318,6 @@ gtag('config', 'TAG_ID');
 <template id="tp-language" data-tp-language="en_US"></template><script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/softwordpress\/en\/*"},{"not":{"href_matches":["\/softwordpress\/wp-*.php","\/softwordpress\/wp-admin\/*","\/softwordpress\/wp-content\/uploads\/*","\/softwordpress\/wp-content\/*","\/softwordpress\/wp-content\/plugins\/*","\/softwordpress\/wp-content\/themes\/neo-blog\/*","\/softwordpress\/en\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script type="text/javascript" id="trp-dynamic-translator-js-extra">
-/* <![CDATA[ */
-var trp_data = {"trp_custom_ajax_url":"https:\/\/redfronts.xyz\/wp-content\/plugins\/translatepress-multilingual\/includes\/trp-ajax.php","trp_wp_ajax_url":"https:\/\/redfronts.xyz\/wp-admin\/admin-ajax.php","trp_language_to_query":"en_US","trp_original_language":"es_MX","trp_current_language":"en_US","trp_skip_selectors":["[data-no-translation]","[data-no-dynamic-translation]","[data-trp-translate-id-innertext]","script","style","head","trp-span","translate-press","[data-trp-translate-id]","[data-trpgettextoriginal]","[data-trp-post-slug]"],"trp_base_selectors":["data-trp-translate-id","data-trpgettextoriginal","data-trp-post-slug"],"trp_attributes_selectors":{"text":{"accessor":"outertext","attribute":false},"block":{"accessor":"innertext","attribute":false},"image_src":{"selector":"img[src]","accessor":"src","attribute":true},"submit":{"selector":"input[type='submit'],input[type='button'], input[type='reset']","accessor":"value","attribute":true},"placeholder":{"selector":"input[placeholder],textarea[placeholder]","accessor":"placeholder","attribute":true},"title":{"selector":"[title]","accessor":"title","attribute":true},"a_href":{"selector":"a[href]","accessor":"href","attribute":true},"button":{"accessor":"outertext","attribute":false},"option":{"accessor":"innertext","attribute":false},"aria_label":{"selector":"[aria-label]","accessor":"aria-label","attribute":true},"video_src":{"selector":"video[src]","accessor":"src","attribute":true},"video_poster":{"selector":"video[poster]","accessor":"poster","attribute":true},"video_source_src":{"selector":"video source[src]","accessor":"src","attribute":true},"audio_src":{"selector":"audio[src]","accessor":"src","attribute":true},"audio_source_src":{"selector":"audio source[src]","accessor":"src","attribute":true},"picture_image_src":{"selector":"picture image[src]","accessor":"src","attribute":true},"picture_source_srcset":{"selector":"picture source[srcset]","accessor":"srcset","attribute":true}},"trp_attributes_accessors":["outertext","innertext","src","value","placeholder","title","href","aria-label","poster","srcset"],"gettranslationsnonceregular":"f642d15cc5","showdynamiccontentbeforetranslation":"","skip_strings_from_dynamic_translation":[],"skip_strings_from_dynamic_translation_for_substrings":{"href":["amazon-adsystem","googleads","g.doubleclick"]},"duplicate_detections_allowed":"100","trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://redfronts.xyz/wp-content/plugins/translatepress-multilingual/assets/js/trp-translate-dom-changes.js?ver=3.0.3" id="trp-dynamic-translator-js"></script>
 <script type="text/javascript" src="https://redfronts.xyz/wp-content/themes/neo-blog/js/neo_blog-header-script.js?ver=1.0" id="neo_blog-header-script-js"></script>
 <script type="text/javascript" src="https://redfronts.xyz/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
 
@@ -340,5 +332,5 @@ var trp_data = {"trp_custom_ajax_url":"https:\/\/redfronts.xyz\/wp-content\/plug
     </nav>
 
 
-</html>
+</html><html><script type="text/javascript" id="trp-dynamic-translator-js-extra"> var trp_data = {"trp_custom_ajax_url":"https:\/\/redfronts.xyz\/wp-content\/plugins\/translatepress-multilingual\/includes\/trp-ajax.php","trp_wp_ajax_url":"https:\/\/redfronts.xyz\/wp-admin\/admin-ajax.php","trp_language_to_query":"en_US","trp_original_language":"es_MX","trp_current_language":"en_US","trp_skip_selectors":["[data-no-translation]","[data-no-dynamic-translation]","[data-trp-translate-id-innertext]","script","style","head","trp-span","translate-press","#query-monitor-main","[data-trp-translate-id]","[data-trpgettextoriginal]","[data-trp-post-slug]"],"trp_base_selectors":["data-trp-translate-id","data-trpgettextoriginal","data-trp-post-slug"],"trp_attributes_selectors":{"text":{"accessor":"outertext","attribute":false},"block":{"accessor":"innertext","attribute":false},"image_src":{"selector":"img[src]","accessor":"src","attribute":true},"submit":{"selector":"input[type='submit'],input[type='button'], input[type='reset']","accessor":"value","attribute":true},"placeholder":{"selector":"input[placeholder],textarea[placeholder]","accessor":"placeholder","attribute":true},"title":{"selector":"[title]","accessor":"title","attribute":true},"a_href":{"selector":"a[href]","accessor":"href","attribute":true},"button":{"accessor":"outertext","attribute":false},"option":{"accessor":"innertext","attribute":false},"aria_label":{"selector":"[aria-label]","accessor":"aria-label","attribute":true},"video_src":{"selector":"video[src]","accessor":"src","attribute":true},"video_poster":{"selector":"video[poster]","accessor":"poster","attribute":true},"video_source_src":{"selector":"video source[src]","accessor":"src","attribute":true},"audio_src":{"selector":"audio[src]","accessor":"src","attribute":true},"audio_source_src":{"selector":"audio source[src]","accessor":"src","attribute":true},"picture_image_src":{"selector":"picture image[src]","accessor":"src","attribute":true},"picture_source_srcset":{"selector":"picture source[srcset]","accessor":"srcset","attribute":true}},"trp_attributes_accessors":["outertext","innertext","src","value","placeholder","title","href","aria-label","poster","srcset"],"gettranslationsnonceregular":"f642d15cc5","showdynamiccontentbeforetranslation":false,"skip_strings_from_dynamic_translation":[],"skip_strings_from_dynamic_translation_for_substrings":{"href":["amazon-adsystem","googleads","g.doubleclick"]},"duplicate_detections_allowed":100,"trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};</script><script src="https://redfronts.xyz/wp-content/plugins/translatepress-multilingual/assets/js/trp-translate-dom-changes.js?ver=3.0.3" id="trp-dynamic-translator-js"></script></html>
 <!-- Powered by Staatic (https://staatic.com/) -->
